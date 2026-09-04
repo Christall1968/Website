@@ -1,0 +1,40 @@
+{
+  "companyImages": [
+    "content/company/images/hero-1.svg",
+    "content/company/images/hero-2.svg"
+  ],
+  "products": [
+    {
+      "slug": "brautstrauss",
+      "title": "Brautstrauß",
+      "subtitle": "Für jeden Stil",
+      "kicker": "Hochzeitsblumen",
+      "description": "Ein romantischer Brautstrauß in sanften Tönen, handgefertigt nach Ihrem persönlichen Stil und Wunschlook.",
+      "menuOrder": 1,
+      "cover": "content/products/brautstrauss/images/cover.jpg",
+      "images": [
+        "content/products/brautstrauss/images/detail-1.jpg"
+      ]
+    },
+    {
+      "slug": "brauttaschen",
+      "title": "Brauttasche",
+      "subtitle": "Elegant und praktisch",
+      "kicker": "Accessoires",
+      "description": "Eine raffinierte Begleitung zum großen Tag – stilvoll, handgemacht und mit viel Liebe zum Detail.",
+      "menuOrder": 2,
+      "cover": "content/products/brauttaschen/images/cover.svg",
+      "images": []
+    },
+    {
+      "slug": "hochzeitsfloristik",
+      "title": "Hochzeitsfloristik",
+      "subtitle": "Dekoration & Styling",
+      "kicker": "Events",
+      "description": "Dekoration für Hochzeiten, Empfangsbereiche und individuelle Details, die Ihre Feier stilvoll ergänzen.",
+      "menuOrder": 3,
+      "cover": "content/products/hochzeitsfloristik/images/cover.svg",
+      "images": []
+    }
+  ]
+}

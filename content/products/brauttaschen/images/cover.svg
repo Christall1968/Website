@@ -1,0 +1,26 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Bild hier einfügen">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f5eee7"/>
+      <stop offset="100%" stop-color="#ead8c7"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fffdfb" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f4ece7" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect x="120" y="100" width="960" height="700" rx="52" fill="url(#panel)" stroke="#c9a98d" stroke-width="4" opacity="0.9"/>
+  <circle cx="340" cy="305" r="120" fill="#f0d7bd" opacity="0.9"/>
+  <circle cx="590" cy="360" r="150" fill="#f7e3d0" opacity="0.9"/>
+  <circle cx="885" cy="330" r="120" fill="#f0d7bd" opacity="0.9"/>
+  <circle cx="430" cy="560" r="150" fill="#f6e7d8" opacity="0.9"/>
+  <circle cx="760" cy="600" r="170" fill="#efd4b8" opacity="0.9"/>
+  <g stroke="#b68860" stroke-width="4" opacity="0.65">
+    <path d="M330 240 C390 300, 420 260, 470 330" fill="none"/>
+    <path d="M720 250 C780 310, 810 280, 860 330" fill="none"/>
+    <path d="M430 650 C520 610, 560 640, 620 680" fill="none"/>
+  </g>
+  <text x="600" y="470" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="600" fill="#5a4339" letter-spacing="1.5">Bild hier einfügen</text>
+  <text x="600" y="525" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#8d685d">Produktfoto</text>
+</svg>
