@@ -1,4 +1,4 @@
-# Flower Power Website
+# Beutiful flowers Website
 
 This repository contains a maintainable GitHub Pages site for a floral studio. New sections can be added by creating a new folder under `content/` with an `index.json` file and image assets.
 

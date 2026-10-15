@@ -107,7 +107,7 @@ function renderDetail(items) {
       <div class="detail-header">
         <img src="${normalizeImage(item.cover || (galleryImages[0] || ''))}" alt="${item.title}">
         <div>
-          <p class="eyebrow">${item.kicker || 'Flower Power'}</p>
+          <p class="eyebrow">${item.kicker || 'Beutiful flowers'}</p>
           <h1>${item.title}</h1>
           <h2>${item.subtitle}</h2>
           <p>${item.description}</p>
