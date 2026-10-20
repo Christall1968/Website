@@ -1,0 +1,115 @@
+[
+  {
+    "slug": "hochzeitsfloristik",
+    "title": "Hochzeitsfloristik",
+    "image": "content/company/images/Brautstrauss 1.jpeg",
+    "children": [
+      {
+        "slug": "brautfloristik",
+        "title": "Brautfloristik",
+        "image": "content/company/images/Brautstrauss 1.jpeg",
+        "children": [
+          {
+            "slug": "brautstraeusse",
+            "title": "Brautsträuße",
+            "image": "content/company/images/Brautstrauss 1.jpeg"
+          },
+          {
+            "slug": "brauttaschen",
+            "title": "Brauttaschen",
+            "image": "content/company/images/Brauttasche 1.jpeg"
+          },
+          {
+            "slug": "braut-haarschmuck",
+            "title": "Braut-Haarschmuck"
+          },
+          {
+            "slug": "florale-brautaccessoires",
+            "title": "Florale Brautaccessoires"
+          }
+        ]
+      },
+      {
+        "slug": "braeutigamfloristik",
+        "title": "Bräutigamfloristik",
+        "children": [
+          {
+            "slug": "reversanstecker",
+            "title": "Reversanstecker"
+          },
+          {
+            "slug": "florale-einstecktuecher",
+            "title": "Florale Einstecktücher"
+          }
+        ]
+      },
+      {
+        "slug": "hochzeitsdekoration",
+        "title": "Hochzeitsdekoration",
+        "children": [
+          {
+            "slug": "tischdekoration",
+            "title": "Tischdekoration"
+          },
+          {
+            "slug": "autoschmuck",
+            "title": "Autoschmuck"
+          },
+          {
+            "slug": "traubogen-dekoration",
+            "title": "Traubogen-Dekoration"
+          },
+          {
+            "slug": "raum-und-festdekoration",
+            "title": "Raum- und Festdekoration"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "trauerfloristik",
+    "title": "Trauerfloristik",
+    "children": [
+      {
+        "slug": "grabgestecke",
+        "title": "Grabgestecke"
+      },
+      {
+        "slug": "grablaternen",
+        "title": "Grablaternen",
+        "image": "content/company/images/Laterne 1.jpeg"
+      },
+      {
+        "slug": "trauerkraenze",
+        "title": "Trauerkränze"
+      },
+      {
+        "slug": "individuelle-trauerfloristik",
+        "title": "Individuelle Trauerfloristik"
+      }
+    ]
+  },
+  {
+    "slug": "weitere-floristik",
+    "title": "Weitere Floristik",
+    "children": [
+      {
+        "slug": "blumenarrangements",
+        "title": "Blumenarrangements"
+      },
+      {
+        "slug": "geschenkideen",
+        "title": "Geschenkideen"
+      },
+      {
+        "slug": "saisonale-floristik",
+        "title": "Saisonale Floristik"
+      },
+      {
+        "slug": "individuelle-anfertigungen",
+        "title": "Individuelle Anfertigungen"
+      }
+    ]
+  }
+]

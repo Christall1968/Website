@@ -1,40 +1,352 @@
 {
   "companyImages": [
-    "content/company/images/hero-1.svg",
-    "content/company/images/hero-2.svg"
+    "content/company/images/Brautstrauss 1.jpeg",
+    "content/company/images/Brautstrauss 2.jpeg",
+    "content/company/images/Brautstrauss 3.jpeg",
+    "content/company/images/Brauttasche 1.jpeg",
+    "content/company/images/Brauttasche 2.jpeg",
+    "content/company/images/Brauttasche 3.jpeg",
+    "content/company/images/Grabgesteck 1.jpeg",
+    "content/company/images/Grabschmuck1.jpeg",
+    "content/company/images/Hochzeitsdeko 2.jpeg",
+    "content/company/images/Laterne 1.jpeg",
+    "content/company/images/WhatsApp Image 2026-10-19 at 15.41.17.jpeg",
+    "content/company/images/WhatsApp Image 2026-10-19 at 15.53.06.jpeg",
+    "content/company/images/blumen_ecke_oben.png",
+    "content/company/images/blumen_ecke_unten.png",
+    "content/company/images/blumen_mitte.png",
+    "content/company/images/blumen_seite.png",
+    "content/company/images/blumen_titel.png",
+    "content/company/images/blumen_unten.png",
+    "content/company/images/girlande_links.png",
+    "content/company/images/girlande_rechts.png",
+    "content/company/images/goldzweig.png",
+    "content/company/images/haarschmuck.jpeg",
+    "content/company/images/hochzeitsdeko 1.jpeg",
+    "content/company/images/laterne 2.jpeg",
+    "content/company/images/laterne 3.jpeg",
+    "content/company/images/laterne2a.jpeg"
   ],
-  "products": [
-    {
-      "slug": "brautstrauss",
-      "title": "Brautstrauß",
-      "subtitle": "Für jeden Stil",
-      "kicker": "Hochzeitsblumen",
-      "description": "Ein romantischer Brautstrauß in sanften Tönen, handgefertigt nach Ihrem persönlichen Stil und Wunschlook.",
-      "menuOrder": 1,
-      "cover": "content/products/brautstrauss/images/cover.jpg",
-      "images": [
-        "content/products/brautstrauss/images/detail-1.jpg"
-      ]
-    },
-    {
-      "slug": "brauttaschen",
-      "title": "Brauttasche",
-      "subtitle": "Elegant und praktisch",
-      "kicker": "Accessoires",
-      "description": "Eine raffinierte Begleitung zum großen Tag – stilvoll, handgemacht und mit viel Liebe zum Detail.",
-      "menuOrder": 2,
-      "cover": "content/products/brauttaschen/images/cover.svg",
-      "images": []
-    },
+  "categories": [
     {
       "slug": "hochzeitsfloristik",
       "title": "Hochzeitsfloristik",
-      "subtitle": "Dekoration & Styling",
-      "kicker": "Events",
-      "description": "Dekoration für Hochzeiten, Empfangsbereiche und individuelle Details, die Ihre Feier stilvoll ergänzen.",
-      "menuOrder": 3,
-      "cover": "content/products/hochzeitsfloristik/images/cover.svg",
-      "images": []
+      "image": "content/company/images/Brautstrauss 1.jpeg",
+      "children": [
+        {
+          "slug": "brautfloristik",
+          "title": "Brautfloristik",
+          "image": "content/company/images/Brautstrauss 1.jpeg",
+          "children": [
+            {
+              "slug": "brautstraeusse",
+              "title": "Brautsträuße",
+              "image": "content/company/images/Brautstrauss 1.jpeg"
+            },
+            {
+              "slug": "brauttaschen",
+              "title": "Brauttaschen",
+              "image": "content/company/images/Brauttasche 1.jpeg"
+            },
+            {
+              "slug": "braut-haarschmuck",
+              "title": "Braut-Haarschmuck"
+            },
+            {
+              "slug": "florale-brautaccessoires",
+              "title": "Florale Brautaccessoires"
+            }
+          ]
+        },
+        {
+          "slug": "braeutigamfloristik",
+          "title": "Bräutigamfloristik",
+          "children": [
+            {
+              "slug": "reversanstecker",
+              "title": "Reversanstecker"
+            },
+            {
+              "slug": "florale-einstecktuecher",
+              "title": "Florale Einstecktücher"
+            }
+          ]
+        },
+        {
+          "slug": "hochzeitsdekoration",
+          "title": "Hochzeitsdekoration",
+          "children": [
+            {
+              "slug": "tischdekoration",
+              "title": "Tischdekoration"
+            },
+            {
+              "slug": "autoschmuck",
+              "title": "Autoschmuck"
+            },
+            {
+              "slug": "traubogen-dekoration",
+              "title": "Traubogen-Dekoration"
+            },
+            {
+              "slug": "raum-und-festdekoration",
+              "title": "Raum- und Festdekoration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "trauerfloristik",
+      "title": "Trauerfloristik",
+      "children": [
+        {
+          "slug": "grabgestecke",
+          "title": "Grabgestecke"
+        },
+        {
+          "slug": "grablaternen",
+          "title": "Grablaternen",
+          "image": "content/company/images/Laterne 1.jpeg"
+        },
+        {
+          "slug": "trauerkraenze",
+          "title": "Trauerkränze"
+        },
+        {
+          "slug": "individuelle-trauerfloristik",
+          "title": "Individuelle Trauerfloristik"
+        }
+      ]
+    },
+    {
+      "slug": "weitere-floristik",
+      "title": "Weitere Floristik",
+      "children": [
+        {
+          "slug": "blumenarrangements",
+          "title": "Blumenarrangements"
+        },
+        {
+          "slug": "geschenkideen",
+          "title": "Geschenkideen"
+        },
+        {
+          "slug": "saisonale-floristik",
+          "title": "Saisonale Floristik"
+        },
+        {
+          "slug": "individuelle-anfertigungen",
+          "title": "Individuelle Anfertigungen"
+        }
+      ]
     }
-  ]
+  ],
+  "products": [
+    {
+      "slug": "brautstrauss-01",
+      "title": "Brautstrauß",
+      "subtitle": "Rosenherz in tiefem Rot",
+      "seoTitle": "Brautstrauß in Herzform – Rosenherz | Beautiful-Flowers.de",
+      "seoDescription": "Brautstrauß in Herzform aus tiefroten Rosen, hellen Blüten und weißen Schmuckperlen. Individuell gestaltet, Preis auf Anfrage.",
+      "imageAlt": "Herzförmiger Brautstrauß aus tiefroten Rosen mit hellen Blüten und kleinen weißen Schmuckperlen",
+      "category": "brautstraeusse",
+      "cover": "content/company/images/Brautstrauss 1.jpeg",
+      "images": [],
+      "description": "Ein ausdrucksstarker Brautstrauß, der die Liebe in ihrer schönsten Form zeigt. Die tiefroten Rosen sind liebevoll zu einem romantischen Blütenherz arrangiert und werden von zarten hellen Blüten umrahmt.\n\nBesondere Akzente setzen die kleinen weißen Schmuckperlen in den Blütenköpfen. Sie verleihen dem Arrangement eine festliche, elegante Note und bilden einen wunderschönen Kontrast zum kräftigen Rot der Rosen.\n\nDie außergewöhnliche Herzform macht diesen Brautstrauß zu einem besonderen Symbol für Liebe und Verbundenheit. Ein romantischer Blickfang für Bräute, die sich etwas Individuelles wünschen.\n\nAuf Wunsch können Farben, Blüten und Gestaltung passend zum Brautkleid und zum Hochzeitskonzept angepasst werden.\n\nMit Liebe zum Detail von Hand gefertigt.",
+      "price": "Preis auf Anfrage",
+      "menuOrder": 10
+    },
+    {
+      "slug": "brautstrauss-02",
+      "title": "Brautstrauß",
+      "subtitle": "Eleganter Blütenbogen in Weiß",
+      "seoTitle": "Weißer Brautstrauß als Blütenbogen | Beautiful-Flowers.de",
+      "seoDescription": "U-förmiger Brautstrauß aus weißen Rosen und herabhängenden Orchideen – eine handgefertigte Alternative zum klassischen Strauß.",
+      "imageAlt": "U-förmiger Brautstrauß aus weißen Rosen mit zarten, herabhängenden Orchideen",
+      "category": "brautstraeusse",
+      "cover": "content/company/images/Brautstrauss 2.jpeg",
+      "images": [],
+      "description": "Eine außergewöhnliche Alternative zum klassischen Brautstrauß: Dieser elegante, U-förmige Blütenbogen vereint romantische weiße Rosen mit zarten, herabhängenden Orchideen.\n\nDie geschwungene Form verleiht dem Arrangement eine besondere Leichtigkeit. Während die Rosen den Bogen schmücken, fallen die filigranen Orchideen sanft nach unten und sorgen für eine wunderschöne, fließende Silhouette.\n\nEin stilvoller Begleiter für Bräute, die etwas Außergewöhnliches suchen und ihre Persönlichkeit mit einem besonderen floristischen Accessoire unterstreichen möchten.\n\nFarben, Blüten und Gestaltung können auf Wunsch individuell an das Brautkleid und das Hochzeitskonzept angepasst werden.\n\nMit Liebe zum Detail von Hand gefertigt.",
+      "price": "Preis auf Anfrage",
+      "menuOrder": 11
+    },
+    {
+      "slug": "brautstrauss-03",
+      "title": "Brautstrauß",
+      "subtitle": "Ein Herz voller Liebe – in Cremeweiß",
+      "seoTitle": "Cremeweißer Herz-Brautstrauß | Beautiful-Flowers.de",
+      "seoDescription": "Herzförmiger Brautstrauß mit cremeweißen Rosen und Eukalyptusgrün. Individuell passend zum Hochzeitskonzept gestaltet.",
+      "imageAlt": "Herzförmiger Brautstrauß aus cremeweißen Rosen mit natürlichem Eukalyptusgrün",
+      "category": "brautstraeusse",
+      "cover": "content/company/images/Brautstrauss 3.jpeg",
+      "images": [],
+      "description": "Ein Brautstrauß, der die Liebe auf besonders schöne Weise zum Ausdruck bringt. Die liebevoll arrangierten Rosen in zarten Creme- und Weißtönen bilden ein romantisches Blütenherz, das durch natürliches Eukalyptusgrün harmonisch ergänzt wird.\n\nDie außergewöhnliche Herzform macht diesen Brautstrauß zu einem ganz besonderen Symbol der Liebe und Verbundenheit. Die sanften Blütenfarben verleihen ihm eine zeitlose Eleganz und lassen die besondere Gestaltung wunderbar zur Geltung kommen.\n\nEin stilvoller Begleiter für Bräute, die ihre Liebe nicht nur im Herzen tragen, sondern auch mit ihrem Brautstrauß zum Ausdruck bringen möchten.\n\nAuf Wunsch können Farben, Blüten und Gestaltung individuell an das Hochzeitskonzept und die persönlichen Vorstellungen angepasst werden.\n\nMit Liebe zum Detail von Hand gefertigt.",
+      "price": "Preis auf Anfrage",
+      "menuOrder": 12
+    },
+    {
+      "slug": "brauttasche-01",
+      "title": "Brauttasche",
+      "subtitle": "Blütentraum – Eleganz zum Tragen",
+      "seoTitle": "Brauttasche mit Perlengriff: Blütentraum | Beautiful-Flowers.de",
+      "seoDescription": "Handgefertigte Brauttasche mit cremeweißen und apricotfarbenen Blüten, Perlengriff und Platz für ein Handy oder Taschentücher.",
+      "imageAlt": "Florale Brauttasche mit cremeweißen und apricotfarbenen Blüten, Perlengriff und verstautem Smartphone",
+      "category": "brauttaschen",
+      "cover": "content/company/images/Brauttasche 1.jpeg",
+      "images": [],
+      "description": "Diese außergewöhnliche Brauttasche verbindet romantische Hochzeitsfloristik mit einem ganz besonderen praktischen Nutzen. Sie ist nicht nur ein wunderschönes florales Accessoire, sondern gleichzeitig eine elegante Alternative zum klassischen Brautstrauß.\n\nDie liebevoll arrangierten Blüten in zarten Creme- und Weißtönen, kombiniert mit sanften apricotfarbenen Akzenten und natürlich wirkendem Grün, verleihen der Tasche eine harmonische und romantische Ausstrahlung.\n\nEin besonderes Highlight ist der handgefertigte Tragegriff. Er besteht aus einzelnen weißen Perlen, die sorgfältig auf einen Draht aufgefädelt wurden. Die Perlen bilden dabei selbst den gesamten Tragegriff und sind nicht lediglich eine aufgeklebte oder aufgesetzte Verzierung.\n\nDoch diese Brauttasche ist nicht nur schön anzusehen, sondern auch praktisch: Im Inneren lassen sich kleine persönliche Dinge verstauen, die eine Braut an ihrem Hochzeitstag gerne griffbereit haben möchte – beispielsweise das Handy, Taschentücher oder andere wichtige Kleinigkeiten.\n\nSo vereint die Brauttasche die Schönheit eines romantischen Blumenarrangements mit dem Komfort einer kleinen Handtasche.\n\nOb klassisch, romantisch oder modern – auf Wunsch können Farben, Blüten und Gestaltung individuell an das Brautkleid, das Hochzeitskonzept und die persönlichen Vorstellungen angepasst werden.\n\nMit Liebe zum Detail von Hand gefertigt.",
+      "price": "Preis auf Anfrage",
+      "menuOrder": 20
+    },
+    {
+      "slug": "brauttasche-02",
+      "title": "Brauttasche",
+      "subtitle": "Romantischer Blütenzauber",
+      "seoTitle": "Brauttasche: Romantischer Blütenzauber | Beautiful-Flowers.de",
+      "seoDescription": "Brauttasche zur Hochzeit mit cremeweißen und altrosafarbenen Blüten, herabhängenden Blütenelementen und Perlengriff.",
+      "imageAlt": "Brauttasche mit cremeweißen und altrosafarbenen Blüten, seitlich herabhängenden Blüten und Perlengriff",
+      "category": "brauttaschen",
+      "cover": "content/company/images/Brauttasche 2.jpeg",
+      "images": [],
+      "description": "Diese außergewöhnliche Brauttasche vereint romantische Hochzeitsfloristik mit stilvoller Eleganz und einem praktischen Detail. Als besondere Alternative zum klassischen Brautstrauß setzt sie einen wunderschönen floralen Akzent am Hochzeitstag.\n\nÜppig arrangierte Blüten in zarten Creme- und Weißtönen harmonieren mit Rosen in romantischem Altrosa und natürlich wirkendem Grün. Seitlich herabhängende Blüten verleihen dem Arrangement eine leichte, verspielte und fließende Silhouette.\n\nEin besonderes Highlight ist der sorgfältig von Hand gefertigte Tragegriff aus größeren weißen Perlen. Die einzelnen Perlen werden auf einen Draht aufgefädelt und bilden gemeinsam den gesamten Griff. So entsteht ein elegantes Detail, das die florale Gestaltung wunderbar ergänzt.\n\nNeben ihrer dekorativen Wirkung bietet die Brauttasche auch eine praktische Funktion: Im Inneren lassen sich kleine persönliche Dinge wie ein Handy oder Taschentücher verstauen. So hat die Braut das Wichtigste griffbereit und trägt gleichzeitig ein außergewöhnliches florales Accessoire.\n\nDie etwas üppigere äußere Gestaltung unterstreicht den romantischen Charakter der Tasche, während das Innenfach bewusst auf kleine persönliche Gegenstände ausgelegt ist.\n\nFarben, Blüten und Gestaltung können auf Wunsch individuell an das Brautkleid, das Hochzeitskonzept und die persönlichen Vorstellungen angepasst werden.\n\nMit Liebe zum Detail von Hand gefertigt.",
+      "price": "Preis auf Anfrage",
+      "menuOrder": 21
+    },
+    {
+      "slug": "brauttasche-03",
+      "title": "Brauttasche",
+      "subtitle": "Goldener Blütenzauber – Romantik mit herbstlichem Charme",
+      "seoTitle": "Brauttasche mit Orchideen & Perlengriff | Beautiful-Flowers.de",
+      "seoDescription": "Florale Brauttasche mit cremeweißen Blüten, weißen Orchideen, Perlengriff und goldenen herzförmigen Karabinerhaken.",
+      "imageAlt": "Cremeweiße florale Brauttasche mit herabhängenden weißen Orchideen, aufgefädeltem Perlengriff und herzförmigen goldenen Karabinerhaken",
+      "category": "brauttaschen",
+      "cover": "content/company/images/Brauttasche 3.jpeg",
+      "images": [],
+      "description": "Diese außergewöhnliche Brauttasche vereint romantische Eleganz mit warmen, natürlichen Farbakzenten. Die harmonische Kombination aus cremeweißen Blüten, sanften Gold- und Brauntönen und liebevoll arrangierten floralen Details verleiht ihr einen besonders edlen Charakter.\n\nÜppige helle Blüten bilden das Herzstück des Arrangements, während die seitlich und nach unten fallenden weißen Orchideen für eine wunderschöne, fließende Silhouette sorgen. Die warmen Farbakzente verleihen der Tasche einen dezent herbstlichen Charme, ohne sie auf eine bestimmte Jahreszeit festzulegen.\n\nEin besonderes Highlight ist der handgefertigte Tragegriff aus einzelnen weißen Perlen, die auf einen Draht aufgefädelt wurden und gemeinsam den Griff bilden.\n\nBesonders liebevoll gestaltet ist auch seine Befestigung: Goldfarbene, herzförmige Karabinerhaken verbinden den Perlengriff mit der Brauttasche. Dieses außergewöhnliche Detail greift das romantische Thema der Hochzeit auf und verleiht dem Arrangement eine ganz persönliche Note.\n\nNeben ihrer dekorativen Wirkung bietet die Brauttasche auch einen kleinen praktischen Nutzen. Im Inneren lassen sich wichtige Kleinigkeiten wie ein Handy oder Taschentücher verstauen. So hat die Braut das Nötigste griffbereit und trägt gleichzeitig ein außergewöhnliches florales Accessoire.\n\nOb für eine romantische Herbsthochzeit oder als eleganter Kontrast zu einem klassischen weißen Brautkleid – diese Brauttasche ist eine besondere Alternative zum traditionellen Brautstrauß.\n\nAuf Wunsch können Farben, Blüten und Gestaltung individuell an das Brautkleid, das Hochzeitskonzept und die persönlichen Vorstellungen angepasst werden.\n\nMit Liebe zum Detail von Hand gefertigt.",
+      "price": "Preis auf Anfrage",
+      "menuOrder": 22
+    },
+    {
+      "slug": "grablaterne-01",
+      "title": "Grablaterne",
+      "subtitle": "Herbstgold – Ein Licht der Erinnerung",
+      "seoTitle": "Herbstgold: Grablaterne mit Herbstblüten | Beautiful-Flowers.de",
+      "seoDescription": "Goldfarbene Grablaterne mit geriffeltem Gehäuse, herbstlichen Blüten in Orange, Rostrot und Creme sowie warm leuchtender LED-Kerze.",
+      "imageAlt": "Goldfarbene Grablaterne mit geriffeltem Gehäuse, orange-rotem und cremefarbenem Herbstblumenschmuck sowie warm leuchtender LED-Kerze",
+      "description": "Diese liebevoll gestaltete Grablaterne verbindet die warmen Farben des Herbstes mit einem sanften Licht der Erinnerung. Sie ist ein besonderer Grabschmuck, der einen Ort des stillen Gedenkens auf würdevolle und persönliche Weise verschönert.\n\nDas elegante, goldfarbene Laternengehäuse wird von einem üppigen floralen Arrangement begleitet. Cremefarbene Blüten, warme Orange- und Rostrottöne sowie herbstlich gefärbte Blätter und filigrane Zweige bilden eine harmonische Komposition. Die seitlich herabhängenden Blätter verleihen der Gestaltung eine natürliche Leichtigkeit und unterstreichen ihren herbstlichen Charakter.\n\nEin besonderes Highlight ist die LED-Kerze im Inneren der Laterne. Ihr warmes Licht scheint durch die geriffelten Seitenflächen und sorgt für einen sanften, stimmungsvollen Lichtschein. Zusammen mit den goldenen Akzenten und den herbstlichen Blüten entsteht eine Atmosphäre voller Wärme, Ruhe und Geborgenheit.\n\nOb als liebevoller Grabschmuck in der Herbstzeit oder als persönliches Zeichen der Verbundenheit – diese Grablaterne erinnert auf besondere Weise daran, dass schöne Erinnerungen im Herzen weiterleuchten.\n\nAuf Wunsch kann die florale Gestaltung individuell in Farbe und Zusammenstellung angepasst werden.\n\nMit Liebe zum Detail von Hand gefertigt.",
+      "category": "grablaternen",
+      "cover": "content/company/images/Laterne 1.jpeg",
+      "images": [],
+      "price": "Preis auf Anfrage",
+      "menuOrder": 30
+    },
+    {
+      "slug": "grablaterne-02",
+      "title": "Grablaterne",
+      "subtitle": "Herbstlicht – Ein stiller Gruß voller Wärme",
+      "seoTitle": "Herbstlicht: Grablaterne mit Herbstfloristik | Beautiful-Flowers.de",
+      "seoDescription": "Goldfarbene Grablaterne mit gelben Rosen, orangefarbenen Orchideen, herbstlichen Blättern und Marienfigur im Inneren.",
+      "imageAlt": "Goldfarbene Grablaterne mit gelben Rosen, orangefarbenen Orchideen, herbstlicher Floristik und Marienfigur im Inneren",
+      "description": "Diese außergewöhnliche Grablaterne vereint liebevoll gestaltete Floristik mit einem besonderen Symbol des Glaubens, der Hoffnung und der Erinnerung.\n\nDas elegante goldfarbene Laternengehäuse wird von einer üppigen Blütenkomposition in warmen Herbstfarben geschmückt. Leuchtend gelbe Rosen, orangefarbene Orchideen, bordeauxrote Blätter und filigrane Zweige bilden ein harmonisches Zusammenspiel aus Wärme und natürlicher Eleganz.\n\nBesonders schön sind die seitlich herabhängenden Blüten und langen grünen Palmblätter, die dem Arrangement eine fließende, lebendige Form verleihen.\n\nIm Inneren der Laterne befindet sich eine Marienfigur, die der Gestaltung eine besonders persönliche und symbolische Bedeutung verleiht. Das sanfte, warme Licht setzt die Figur stimmungsvoll in Szene und schafft eine Atmosphäre der Ruhe und des stillen Gedenkens.\n\nDie herbstlichen Farben erinnern an die Schönheit der Natur und den Wandel der Jahreszeiten. Gleichzeitig steht das warme Licht sinnbildlich für die Erinnerungen, die auch über den Abschied hinaus im Herzen weiterleben.\n\nOb als liebevoller Grabschmuck, als Zeichen des Glaubens oder als persönlicher Gruß an einen geliebten Menschen – diese Grablaterne verbindet florale Schönheit mit einer besonderen emotionalen Bedeutung.\n\nAuf Wunsch kann die florale Gestaltung individuell in Farbe und Zusammenstellung angepasst werden.\n\nMit Liebe zum Detail von Hand gefertigt.",
+      "category": "grablaternen",
+      "cover": "content/company/images/laterne 2.jpeg",
+      "images": [
+        "content/company/images/laterne2a.jpeg"
+      ],
+      "price": "Preis auf Anfrage",
+      "menuOrder": 31
+    },
+    {
+      "slug": "grablaterne-03",
+      "title": "Grablaterne",
+      "subtitle": "Himmlischer Blütenfrieden – Ein Zeichen der Verbundenheit",
+      "seoTitle": "Himmlischer Blütenfrieden: Weiße Grablaterne | Beautiful-Flowers.de",
+      "seoDescription": "Weiße Grablaterne mit Marienfigur und üppiger Floristik in Blau, Weiß und zarten Lilatönen. Individuelle Gestaltung auf Anfrage.",
+      "imageAlt": "Weiße Grablaterne mit dekorativen Ausschnitten, blauen und cremeweißen Rosen, zart lilafarbenen Blüten und Marienfigur im Inneren",
+      "description": "Diese liebevoll gestaltete Grablaterne vereint florale Eleganz mit einem besonderen Symbol des Glaubens, der Hoffnung und der Erinnerung.\n\nDie weiße Laterne wird von einer üppigen Blütenkomposition in tiefem Blau, zartem Flieder und sanftem Cremeweiß geschmückt. Edle cremeweiße Rosen bilden einen wunderschönen Kontrast zu den kräftig blauen Blüten, während kleine weiße Blüten und natürlich wirkendes Grün die Gestaltung harmonisch ergänzen.\n\nSeitlich herabhängende Blüten verleihen dem Arrangement eine leichte, fließende Form und unterstreichen die besondere Eleganz dieser Kreation.\n\nIm Inneren befindet sich eine Marienfigur in einem weiß-blauen Gewand, eingebettet in eine liebevoll abgestimmte florale Dekoration. Sie verleiht der Laterne eine persönliche, spirituelle Bedeutung und macht sie zu einem besonderen Zeichen der Verbundenheit und des stillen Gedenkens.\n\nDie Kombination aus Weiß und Blau vermittelt Ruhe, Vertrauen und Hoffnung. So entsteht ein würdevolles Erinnerungsstück, das einen Ort des Gedenkens auf besondere Weise verschönert.\n\nOb als persönlicher Grabschmuck oder als Ausdruck des Glaubens – diese Grablaterne ist ein liebevoll gestalteter Gruß an einen unvergessenen Menschen.\n\nAuf Wunsch können Farben, Blüten und Gestaltung individuell an persönliche Vorstellungen angepasst werden.\n\nMit Liebe zum Detail von Hand gefertigt.",
+      "category": "grablaternen",
+      "cover": "content/company/images/laterne 3.jpeg",
+      "images": [],
+      "price": "Preis auf Anfrage",
+      "menuOrder": 32
+    },
+    {
+      "slug": "grabschmuck-01",
+      "title": "Grabschmuck",
+      "subtitle": "Blüten der Erinnerung – Ein stiller Gruß",
+      "seoTitle": "Grabschmuck: Blüten der Erinnerung | Beautiful-Flowers.de",
+      "seoDescription": "Handgefertigter Grabschmuck mit geschwungenem Tragebogen, schwarzer Schleife und Blüten in Rosa, Creme, Apricot und Bordeauxrot.",
+      "imageAlt": "Florales Grabschmuck-Arrangement mit geschwungenem Tragebogen, schwarzer Schleife und Blüten in Rosa-, Creme-, Apricot- und Bordeauxrot-Tönen",
+      "description": "Manchmal sind es die stillen Gesten, die besonders viel ausdrücken. Dieses liebevoll gestaltete Blumenarrangement ist ein besonderer Gruß der Erinnerung und ein würdevolles Zeichen der Verbundenheit mit einem geliebten Menschen.\n\nZarte Blüten in Altrosa, Creme und Apricot treffen auf tiefes Bordeauxrot und harmonisch abgestimmtes Blattgrün. Die unterschiedlichen Blütenformen und das seitlich auslaufende Blattwerk verleihen dem Arrangement eine natürliche, weiche und zugleich ausdrucksstarke Gestaltung.\n\nEin besonderer Blickfang ist der geschwungene Tragebogen, der von einer schwarzen Schleife geschmückt wird. Sie setzt einen eleganten Akzent und unterstreicht den würdevollen Charakter dieses floralen Erinnerungsstücks.\n\nDie sanften Rosatöne vermitteln Wärme und Zuneigung, während die dunkleren Blüten und Blätter dem Arrangement Tiefe und eine ruhige Eleganz verleihen.\n\nOb als persönlicher Grabschmuck oder als liebevolles Zeichen des Gedenkens – dieses Arrangement schafft einen besonderen Ort für Erinnerungen und Gefühle, die bleiben.\n\nAuf Wunsch können Farben, Blüten und Gestaltung individuell an persönliche Vorstellungen angepasst werden.\n\nMit Liebe zum Detail von Hand gefertigt.",
+      "category": "grabgestecke",
+      "cover": "content/company/images/Grabschmuck1.jpeg",
+      "images": [],
+      "price": "Preis auf Anfrage",
+      "menuOrder": 32
+    },
+    {
+      "slug": "grabgesteck-01",
+      "title": "Grabgesteck",
+      "subtitle": "Licht der Erinnerung – Ein Engel in der Winterzeit",
+      "seoTitle": "Grabgesteck: Licht der Erinnerung | Beautiful-Flowers.de",
+      "seoDescription": "Winterliches Grabgesteck mit betendem Engel, rotem Weihnachtsstern, winterlichem Grün und Laterne am geschwungenen Metallbogen.",
+      "imageAlt": "Winterliches Grabgesteck mit betendem Engel, rotem Weihnachtsstern, bereiftem Grün und schwarzer Laterne an einem geschwungenen Metallbogen",
+      "description": "Wenn die Tage kürzer werden und die Winterzeit beginnt, schenken kleine Lichter und liebevolle Gesten ein besonderes Gefühl der Nähe und Erinnerung.\n\nDieses außergewöhnliche Grabgesteck verbindet die natürliche Schönheit winterlicher Floristik mit einem sanften Licht und einem liebevoll gestalteten Engel als Symbol für Hoffnung, Schutz und Verbundenheit.\n\nIm Mittelpunkt des Arrangements befindet sich ein betender Engel in dezenter Steinoptik. Umgeben wird er von winterlichem Tannengrün, zart bereiften Blättern, hellen Blüten und einem kräftig roten Weihnachtsstern, der dem Gesteck einen warmen, festlichen Akzent verleiht.\n\nBesonders eindrucksvoll ist die kleine schwarze Laterne, die an einem elegant geschwungenen Metallbogen über dem Arrangement hängt. Ihr sanftes Licht taucht die winterliche Gestaltung in eine warme Atmosphäre und macht dieses Grabgesteck zu einem besonderen Blickfang.\n\nDie Kombination aus winterlichen Naturmaterialien, festlichen Farbakzenten und dem betenden Engel schafft ein harmonisches Gesamtbild, das gerade in der Advents- und Weihnachtszeit eine besondere Bedeutung erhält.\n\nAls liebevoller Grabschmuck erinnert dieses Arrangement daran, dass die Verbundenheit mit einem geliebten Menschen auch über den Abschied hinaus bestehen bleibt. Es ist ein stiller Gruß voller Wärme, Trost und schöner Erinnerungen.\n\nAuf Wunsch können Farben, Blüten und die florale Gestaltung individuell an persönliche Vorstellungen angepasst werden.\n\nMit Liebe zum Detail von Hand gefertigt.",
+      "category": "grabgestecke",
+      "cover": "content/company/images/Grabgesteck 1.jpeg",
+      "images": [],
+      "price": "Preis auf Anfrage",
+      "menuOrder": 33
+    },
+    {
+      "slug": "hochzeitsdekoration-01",
+      "title": "Hochzeitsdekoration",
+      "subtitle": "Goldener Herbstzauber – Eleganz in voller Blüte",
+      "seoTitle": "Hochzeitsdekoration: Goldener Herbstzauber | Beautiful-Flowers.de",
+      "seoDescription": "Üppige Hochzeitsdekoration mit cremeweißen und orangefarbenen Blüten, herbstlichen Zweigen und hoher Vase mit silberfarbenem Fuß.",
+      "imageAlt": "Hochzeitsdekoration mit cremeweißen und leuchtend orangefarbenen Blüten, herabhängenden Zweigen und hoher transparenter Vase mit silberfarbenem Fuß",
+      "description": "Ein Hauch von Wärme, Romantik und natürlicher Eleganz – diese außergewöhnliche Blumendekoration setzt stilvolle Akzente und verleiht jeder Hochzeitsfeier eine ganz besondere Atmosphäre.\n\nÜppige cremeweiße Blüten bilden einen wunderschönen Kontrast zu leuchtenden Orange- und warmen Rosttönen. Die harmonisch aufeinander abgestimmten Farben erinnern an die goldene Jahreszeit und schaffen ein einladendes, festliches Gesamtbild.\n\nFeine Blütenzweige ragen verspielt über das Arrangement hinaus, während zarte, herabhängende Elemente für Leichtigkeit und eine elegante, fließende Silhouette sorgen.\n\nBesonders wirkungsvoll ist die Präsentation auf einer hohen, schlanken Vase. Durch die erhöhte Anordnung kommen die Blüten wunderschön zur Geltung und bilden einen besonderen Blickfang auf festlich gedeckten Hochzeitstafeln.\n\nOb als eindrucksvolle Tischdekoration, als floraler Akzent im Empfangsbereich oder als Teil eines liebevoll abgestimmten Hochzeitskonzepts – dieses Arrangement verbindet romantische Blütenpracht mit moderner Eleganz.\n\nDie warmen Farbtöne eignen sich besonders für eine Hochzeit im Spätsommer oder Herbst, lassen sich aber auch wunderbar in andere individuelle Farbkonzepte integrieren.\n\nAuf Wunsch können Farben, Blüten und die gesamte Gestaltung passend zum Hochzeitskonzept, zur Tischdekoration und zu den persönlichen Vorstellungen des Brautpaares angepasst werden.\n\nMit Liebe zum Detail von Hand gefertigt.",
+      "category": "hochzeitsdekoration",
+      "additionalCategories": [
+        "tischdekoration"
+      ],
+      "cover": "content/company/images/hochzeitsdeko 1.jpeg",
+      "images": [],
+      "price": "Preis auf Anfrage",
+      "menuOrder": 34
+    },
+    {
+      "slug": "hochzeitsdekoration-02",
+      "title": "Hochzeitsdekoration",
+      "subtitle": "Romantischer Kerzenzauber – Liebe in Bordeaux und Rosé",
+      "seoTitle": "Hochzeitsdekoration: Kerzenzauber in Bordeaux und Rosé | Beautiful-Flowers.de",
+      "seoDescription": "Romantische Tischdekoration mit Rosen in Bordeaux und Rosé, cremeweißen Blüten und vier bordeauxroten Stabkerzen in goldfarbenen Haltern.",
+      "imageAlt": "Florales Hochzeitsarrangement mit bordeauxroten und rosafarbenen Rosen, cremeweißen Blüten und vier hohen bordeauxroten Stabkerzen in goldfarbenen Haltern",
+      "description": "Romantik, Eleganz und ein Hauch von Luxus – dieses außergewöhnliche Blumenarrangement verwandelt jede Hochzeitstafel in einen stilvollen Blickfang und schafft eine festliche Atmosphäre voller Wärme und Liebe.\n\nIm Mittelpunkt stehen prachtvolle Rosen in tiefem Bordeauxrot und zartem Rosé, die von üppigen cremeweißen Blüten umrahmt werden. Kleine dunkelrote Blüten und liebevoll arrangiertes Blattgrün verleihen der Komposition zusätzliche Tiefe und eine besonders harmonische Ausstrahlung.\n\nEin besonderes Highlight sind die vier hohen, bordeauxroten Stabkerzen, die sich elegant aus dem Blütenarrangement erheben. Ihre schlanken goldfarbenen Halter setzen edle Akzente und unterstreichen den festlichen Charakter dieser außergewöhnlichen Tischdekoration.\n\nDie Kombination aus kräftigen Rottönen, sanftem Rosa und elegantem Cremeweiß verbindet klassische Hochzeitsromantik mit einer modernen, ausdrucksstarken Gestaltung.\n\nOb als Mittelpunkt einer festlich gedeckten Hochzeitstafel, als besondere Dekoration des Brauttisches oder als Teil eines harmonisch abgestimmten Hochzeitskonzepts – dieses Arrangement verleiht der Feier eine unverwechselbare romantische Note.\n\nBesonders schön kommt diese Farbkomposition bei eleganten Hochzeiten mit goldenen Akzenten zur Geltung. Gleichzeitig lassen sich die Farben und floralen Elemente individuell auf das gewünschte Hochzeitskonzept abstimmen.\n\nAuf Wunsch können Blüten, Farben und Kerzengestaltung nach den persönlichen Vorstellungen des Brautpaares angepasst werden.\n\nMit Liebe zum Detail von Hand gefertigt.",
+      "category": "hochzeitsdekoration",
+      "additionalCategories": [
+        "tischdekoration"
+      ],
+      "cover": "content/company/images/Hochzeitsdeko 2.jpeg",
+      "images": [],
+      "price": "Preis auf Anfrage",
+      "menuOrder": 35
+    },
+    {
+      "slug": "haarschmuck-01",
+      "title": "Blütenzauber – Romantischer Blumenkranz",
+      "subtitle": "Farbenfrohe Blütenpracht für besondere Momente",
+      "seoTitle": "Blütenzauber – Romantischer Blumenkranz | Beautiful-Flowers.de",
+      "seoDescription": "Farbenfroher Blumenkranz mit Blüten in Rosa, Apricot, Creme, Blau und Violett sowie dekorativem Schleifenband. Preis auf Anfrage.",
+      "imageAlt": "Romantischer Blumenkranz aus rosa, apricotfarbenen, cremeweißen, blauen und violetten Blüten mit dekorativem Schleifenband",
+      "category": "braut-haarschmuck",
+      "cover": "content/company/images/haarschmuck.jpeg",
+      "images": [],
+      "description": "Ein Hauch Romantik, ein bisschen Leichtigkeit und ganz viel Blütenzauber!\n\nDieser liebevoll gestaltete Blumenkranz begeistert mit einer harmonischen Mischung aus zarten Rosa- und Apricottönen, cremigen Blüten sowie ausdrucksstarken Akzenten in Blau und Violett. Die unterschiedlichen Blütenformen und das dekorative Schleifenband verleihen ihm einen verspielten, natürlichen Charme.\n\nOb zur Hochzeit, für ein Fotoshooting, zum Junggesellinnenabschied, zu einem Festival oder als besonderer Blickfang für festliche Anlässe – dieser Blumenkranz setzt wunderschöne Akzente und unterstreicht einen individuellen Stil.\n\nJedes Arrangement kann auf Wunsch farblich und gestalterisch angepasst werden.\n\nMaterial: Kunstblumen und dekorative Bänder. Individuelle Ausführungen nach Absprache möglich.",
+      "price": "Preis auf Anfrage",
+      "menuOrder": 36
+    }
+  ],
+  "publicSiteUrl": "https://beautiful-flowers.de"
 }

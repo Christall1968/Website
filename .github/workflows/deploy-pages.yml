@@ -28,11 +28,31 @@ jobs:
 
       - name: Build static site data
         run: npm run build
+        env:
+          PUBLIC_SITE_URL: https://beautiful-flowers.de
+
+      - name: Prepare Pages artifact
+        run: |
+          mkdir _site
+          rsync -a \
+            --exclude='*.DS_Store' \
+            --exclude='/.gitignore' \
+            --exclude='/content/company/images/design vorlage.jpeg' \
+            --exclude='/content/company/images/hero-1.svg' \
+            --exclude='/content/company/images/hero-2.svg' \
+            --exclude='/.git/' \
+            --exclude='/.github/' \
+            --exclude='/.idea/' \
+            --exclude='/scripts/' \
+            --exclude='/README.md' \
+            --exclude='/package.json' \
+            --exclude='/_site/' \
+            ./ _site/
 
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
   deploy:
     needs: build

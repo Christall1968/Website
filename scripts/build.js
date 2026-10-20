@@ -4,6 +4,56 @@ const path = require('path');
 const rootDir = path.resolve(__dirname, '..');
 const contentDir = path.join(rootDir, 'content');
 const outputFile = path.join(rootDir, 'site.json');
+const categoriesFile = path.join(contentDir, 'categories.json');
+const sitemapFile = path.join(rootDir, 'sitemap.xml');
+const robotsFile = path.join(rootDir, 'robots.txt');
+
+function getPublicSiteUrl() {
+  const value = process.env.PUBLIC_SITE_URL;
+  if (!value) return '';
+
+  let url;
+  try {
+    url = new URL(value);
+  } catch {
+    throw new Error('PUBLIC_SITE_URL muss eine gültige HTTPS-Adresse sein.');
+  }
+  if (url.protocol !== 'https:' || url.username || url.password || url.search || url.hash) {
+    throw new Error('PUBLIC_SITE_URL muss eine HTTPS-Adresse ohne Zugangsdaten, Query oder Fragment sein.');
+  }
+  return url.href.replace(/\/+$/, '');
+}
+
+function collectCategorySlugs(categories) {
+  return categories.flatMap((category) => [
+    category.slug,
+    ...collectCategorySlugs(category.children || []),
+  ]);
+}
+
+function writeSeoFiles(publicSiteUrl, categories, products) {
+  if (!publicSiteUrl) return;
+
+  const baseUrl = `${publicSiteUrl}/`;
+  const pagePaths = [
+    '.',
+    'impressum.html',
+    'datenschutz.html',
+    'bestellinformationen.html',
+    ...collectCategorySlugs(categories).map((slug) => `category.html?slug=${encodeURIComponent(slug)}`),
+    ...products.map((product) => `detail.html?slug=${encodeURIComponent(product.slug)}`),
+  ];
+  const urls = pagePaths.map((pagePath) => new URL(pagePath, baseUrl).href);
+  const sitemap = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ...urls.map((url) => `  <url><loc>${escapeXml(url)}</loc></url>`),
+    '</urlset>',
+    '',
+  ].join('\n');
+  fs.writeFileSync(sitemapFile, sitemap, 'utf8');
+  fs.writeFileSync(robotsFile, `User-agent: *\nAllow: /\nSitemap: ${new URL('sitemap.xml', baseUrl).href}\n`, 'utf8');
+}
 
 function toPosix(value) {
   return value.replace(/\\/g, '/');
@@ -99,7 +149,7 @@ function normalizeProduct(item, folderName) {
   const safeFolderName = folderName.replace(/^content\//, '');
   const imagesFolder = path.join(contentDir, safeFolderName, 'images');
 
-  if (!hasAnyImageFiles(imagesFolder)) {
+  if (!hasAnyImageFiles(imagesFolder) && !item.cover) {
     ensurePlaceholderSvg(path.join(imagesFolder, 'cover.svg'), item.title || safeFolderName.replace(/[-_]/g, ' '));
   }
 
@@ -146,7 +196,7 @@ function collectProducts() {
 
     const item = readJson(manifestPath);
     const imagesFolder = path.join(folderPath, 'images');
-    if (!hasAnyImageFiles(imagesFolder)) {
+    if (!hasAnyImageFiles(imagesFolder) && !item.cover) {
       ensurePlaceholderSvg(path.join(imagesFolder, 'cover.svg'), item.title || folderName);
     }
 
@@ -163,10 +213,15 @@ function collectCompanyImages() {
   }
 
   ensureCompanyPlaceholders();
-  return getLocalImages('company');
+  const internalImages = new Set(['design vorlage.jpeg', 'hero-1.svg', 'hero-2.svg']);
+  return getLocalImages('company')
+    .filter((image) => !internalImages.has(path.posix.basename(image)));
 }
 
 const companyImages = collectCompanyImages();
 const products = collectProducts();
-fs.writeFileSync(outputFile, JSON.stringify({ companyImages, products }, null, 2));
+const categories = fs.existsSync(categoriesFile) ? readJson(categoriesFile) : [];
+const publicSiteUrl = getPublicSiteUrl();
+fs.writeFileSync(outputFile, JSON.stringify({ companyImages, categories, products, publicSiteUrl }, null, 2));
+writeSeoFiles(publicSiteUrl, categories, products);
 console.log(`Generated ${products.length} products and ${companyImages.length} company images in ${outputFile}`);
